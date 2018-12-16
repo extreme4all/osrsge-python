@@ -1,4 +1,9 @@
 #some global variables
+import requests
+import json
+from pprint import pprint
+import time 
+
 x=0
 l=[]
 avg_l=0.1
