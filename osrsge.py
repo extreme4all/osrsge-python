@@ -33,7 +33,7 @@ def read_OSRS_GE(item_id):
     if str(lastchar)=="k":
         price=int(float(str(data["item"]["current"]["price"])[:len(strprice)-1])*1000)
     else:
-        price=int(data["item"]["current"]["price"])
+        price=data["item"]["current"]["price"]
     row=[]
     row.append(int(time.time()))
     row.append(data["item"]["id"])
